@@ -17,6 +17,7 @@ class Pdal < Formula
   depends_on "hdf5"
   depends_on "laszip"
   depends_on "pcl"
+  depends_on "hexer"
   depends_on "postgresql"
 
   def install
@@ -25,6 +26,7 @@ class Pdal < Formula
                          "-DBUILD_PLUGIN_GREYHOUND=ON",
                          "-DBUILD_PLUGIN_ICEBRIDGE=ON",
                          "-DBUILD_PLUGIN_PCL=ON",
+                         "-DBUILD_PLUGIN_HEXBIN=ON",
                          "-DBUILD_PLUGIN_PGPOINTCLOUD=ON",
                          "-DBUILD_PLUGIN_PYTHON=ON",
                          "-DBUILD_PLUGIN_SQLITE=ON"
